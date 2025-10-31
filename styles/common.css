@@ -119,6 +119,7 @@
   --font-display: Azeret Mono, sans-serif;
   --font-body: Libre Franklin, sans-serif;
   --font-monospace: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, monospace;
+  --border-radius: 0.3rem;
 }
 * {
   box-sizing: border-box;
@@ -153,6 +154,29 @@ p:first-child, ul:first-child, ol:first-child {
 }
 p:last-child, ul:last-child, ol:last-child {
   margin-bottom: 0;
+}
+input, button {
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+button, input[type="submit"] {
+  color: white;
+  background: var(--color-primary);
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    input {
+      width: 100%;
+    }
+  }
 }
 .container {
   position: relative;
@@ -195,6 +219,12 @@ p:last-child, ul:last-child, ol:last-child {
     width: 100%;
   }
 }
+.buttondown-credit {
+  display: block;
+  margin-top: 0.7rem;
+  color: white;
+  font-size: 0.7rem;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -204,6 +234,10 @@ main {
   padding-bottom: 3rem;
   box-shadow: 0 0 60px 30px var(--color-bg);
   background: var(--color-secondary-dark);
+  @media (max-width: 800px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   h2, p {
     margin: 0;
   }
@@ -220,6 +254,14 @@ main {
       font-size: 0.8rem;
       span.breakable {
         display: block;
+      }
+    }
+  }
+  form {
+    gap: 2rem;
+    input[type="email"] {
+      @media (min-width: 801px) {
+        min-width: 18rem;
       }
     }
   }
