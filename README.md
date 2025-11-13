@@ -1,3 +1,8 @@
+<!--
+© 2025 Functional Software, Inc. dba Sentry
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Cranberry sOSS
 
 A Thanksgiving campaign to celebrate Open Source maintainers.

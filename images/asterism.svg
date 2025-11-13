@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 73.619828 34.574721"
+   version="1.1"
+   sodipodi:docname="asterism.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   width="73.619827"
+   height="34.574722"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview112"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.8220732"
+     inkscape:cx="21.360107"
+     inkscape:cy="-18.664171"
+     inkscape:window-width="3840"
+     inkscape:window-height="2160"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1 {
+        fill: #68a042;
+      }
+
+      .cls-2 {
+        opacity: .43;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: .67;
+      }
+
+      .cls-5 {
+        fill: #9f7c2d;
+      }
+
+      .cls-6 {
+        fill: #a01d22;
+      }
+
+      .cls-7 {
+        fill: #811619;
+      }
+
+      .cls-8 {
+        opacity: .3;
+      }
+
+      .cls-9 {
+        fill: #d01f26;
+      }
+
+      .cls-10 {
+        fill: #2e613d;
+      }
+
+      .cls-11 {
+        fill: #efdeb2;
+      }
+
+      .cls-12 {
+        fill: #fdc044;
+      }
+    </style>
+  </defs>
+  <g
+     id="g1"
+     transform="translate(0.72582364,-1.1405889)">
+    <polygon
+       class="cls-4"
+       points="544.11,86.57 546.81,71.65 549.25,86.46 556.45,87.72 549.25,89.63 546.81,103.28 544.66,89.93 536.15,87.92 "
+       id="polygon85"
+       style="opacity:1"
+       transform="translate(-510.21591,-69.03705)" />
+    <polygon
+       class="cls-3"
+       points="359.17,107.15 363.93,108.07 359.23,108.88 358.33,118.07 357.22,108.96 351.81,107.55 357.2,107.13 358.33,98.07 "
+       id="polygon94"
+       style="fill:#ffffff;fill-opacity:0.670588"
+       transform="translate(-293.78591,-89.64205)" />
+    <polygon
+       class="cls-3"
+       points="428.58,34.68 433.96,34.27 435.1,25.2 435.93,34.28 440.7,35.2 436,36.01 435.1,45.2 433.99,36.1 "
+       id="polygon95-9-2"
+       style="opacity:0.67;fill:#ffffff"
+       transform="translate(-426.55591,-16.77205)" />
+  </g>
+</svg>

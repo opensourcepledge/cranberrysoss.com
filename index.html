@@ -1,3 +1,7 @@
+<!--
+© 2025 Functional Software, Inc. dba Sentry
+SPDX-License-Identifier: Apache-2.0
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,43 +34,251 @@
   </head>
   <body>
     <div class="container">
-      <div class="page-wrapper text-center">
-        <div class="logo flex-center">
-          <img
-            width="860"
-            src="/images/scene-nobg.svg"
-            alt="A scene containing the Cranberry sOSS logo — a label saying “Cranberry sOSS”, featuring cranberries, and bearing the message “Open for sustainable freshness”. The logo is set above a table full of Western festive foods."
-          >
+      <div class="logo" role="img" aria-label="A scene containing the Cranberry sOSS logo — a label saying “Cranberry sOSS”, featuring cranberries, and bearing the message “Open for sustainable freshness”. The logo is set above a table full of Western festive foods."></div>
+      <!--
+      <div class="intro">
+        <h2>
+          What is Cranberry sOSS?<br>Wouldn’t <em>you</em> like to know?<sup>*</sup>
+        </h2>
+
+        <p>
+          <span class="breakable"><sup>*</sup>Earnest question.</span>
+          <span class="breakable">Sign up to be the first to know…</span>
+        </p>
+
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/cranberry-soss"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/cranberry-soss', 'popupwindow')"
+        >
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="i-have-fomo@and-must-know.com">
+            <input
+              type="submit"
+              class="button"
+              value="Put me on the list">
+          </div>
+        </form>
+      </div>
+      -->
+      <div class="soss-mobile">
+        <h2 class="isolated-text">
+          <span>This Thanksgiving,</span>
+          <span>thank the maintainers…</span>
+          <span>in style</span>
+        </h2>
+        <a class="button button--huge" disabled>Order now for $13.37</a>
+      </div>
+      <div class="soss">
+        <div class="soss__inner">
+          <div class="soss__label-wrapper">
+            <div class="soss__label">
+              <h2>This Thanksgiving,<br>thank the maintainers…<br>in style</h2>
+              <p>
+                Be the envy of your Thanksgiving gathering. Some might bring
+                homemade pies, or a sweet potato casserole, but only you will
+                bring comestibles that actively support Open Source
+                maintainers.
+              </p>
+              <a class="button button--huge" disabled>Order now for $13.37</a>
+            </div>
+          </div>
         </div>
-
-        <main>
-          <h2>
-            What is Cranberry sOSS?<br>Wouldn’t <em>you</em> like to know?<sup>*</sup>
-          </h2>
-
+      </div>
+      <section class="product">
+        <div class="product__description">
           <p>
-            <span class="breakable"><sup>*</sup>Earnest question.</span>
-            <span class="breakable">Sign up to be the first to know…</span>
+            Compiled from the best ingredients Cape Cod has to offer, it’s the
+            perfect build for anyone who likes their sauce clean and fresh;
+            tart, but beautifully balanced.
           </p>
 
-          <form
-            action="https://buttondown.com/api/emails/embed-subscribe/cranberry-soss"
-            method="post"
-            target="popupwindow"
-            onsubmit="window.open('https://buttondown.com/cranberry-soss', 'popupwindow')"
-          >
-            <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="i-have-fomo@and-must-know.com">
-              <input
-                type="submit"
-                value="Put me on the list">
-            </div>
-          </form>
-        </main>
-      </div>
+          <p>
+            Deploy it to your sandwiches, your charcuterie boards, or skip all
+            that and just fork it straight from the jar. Dinner parties, late
+            night leftover sessions, crunch mode — it’s perfect in any <em>.env</em>.
+          </p>
+
+          <p>
+            Made with simple, clean ingredients and a <em>commit</em>-ment to quality,
+            it’s a delicious nod to Cape Cod’s organic farming tradition that
+            will merge right into any meal (and every jar sold supports Open
+            Source devs!)
+          </p>
+
+          <p class="footnote">
+            Ingredients: Organic fresh cranberries (local ingredient),
+            organic cane sugar, water. Gluten free, sodium free, certified
+            organic.
+          </p>
+        </div>
+        <div class="product__back">
+          <img
+            src="/images/jar-back.webp"
+            width="400"
+            alt="A jar of cranberry sauce, with the back part of the label visible, reading “Brought to you by: Open Source Pledge, thanks.dev, Sentry.">
+        </div>
+      </section>
+      <section>
+        <h2 class="text-center">All Profits Go to Open Source Maintainers</h2>
+        <div class="narrow-container">
+          <p>
+            Every penny made from sOSS sales goes towards supporting the Open Source maintainers we all depend on.
+          </p>
+          <p>
+            But <em>which maintainers</em>? The Open Source ecosystem is complex, and
+            <a href="https://vlad.website/keystone-maintainers-keep-the-internet-going/">keystone maintainers</a>
+            are difficult to identify.
+          </p>
+          <p class="text-center td-logo">
+            <a href="https://thanks.dev" target="_blank">
+              <img src="/images/thanksdev.svg">
+            </a>
+          </p>
+          <p>
+            That's where <a href="https://thanks.dev">thanks.dev</a> comes in,
+            who have used their dependency analysis model to create a weighted list of the 1000 most depended upon
+            Open Source maintainers globally.
+          </p>
+          <p>
+            No model is perfect, and we certainly haven't been able to include
+            all keystone maintainers. But we think the distribution
+            <a href="https://thanks.dev" target="_blank">thanks.dev</a>
+            came up with makes a lot of sense. And you don't have to take our
+            word for it. In the spirit of transparency, our
+            <a href="/funding" target="_blank">funding distribution</a>
+            is public.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-center">FAQs</h2>
+        <div class="faqs narrow-container">
+          <div class="faq">
+            <h3>
+              Is this real?
+            </h3>
+            <p>
+              Yes.
+            </p>
+          </div>
+
+          <div class="faq">
+            <h3>
+              Isn’t this kinda stupid? There are easier, cheaper ways to get
+              cranberry sauce.
+            </h3>
+            <p>
+              No, not kinda stupid. VERY stupid. Stupid gets attention. The
+              sustainability crisis in OSS — and
+              <a href="https://opensourcepledge.com/blog/burnout-in-open-source-a-structural-problem-we-can-fix-together/" target="_blank"
+                >maintainers in general</a
+              > —
+              need more
+              attention, and more money to support them. Hopefully, Cranberry
+              sOSS provides both.
+            </p>
+          </div>
+
+          <div class="faq">
+            <h3>
+              Do maintainers need our help, really?
+            </h3>
+            <p>
+              Yes, really. In fact, a
+              <a href="https://opensourcepledge.com/blog/burnout-in-open-source-a-structural-problem-we-can-fix-together/" target="_blank"
+                >recent report</a
+              >
+              by University of Edinburgh
+              PhD researcher
+              <a href="https://mirandaheath.website">Miranda Heath</a>
+              outlined the many challenges maintainers face, which often lead
+              to burnout and global security vulnerabilities.
+            </dddd>
+          </div>
+
+          <div class="faq">
+            <h3>
+              Where do you ship to?
+            </h3>
+            <p>
+              We ship internationally, but are sadly unable to ship to some countries. Read our
+              <a href="https://checkout.sentry.shop/policies/shipping-policy"
+                >shipping policy</a
+              >
+              to learn more.
+            </p>
+          </div>
+
+          <div class="faq">
+            <h3>
+              How long will it take to get my sOSS?
+            </h3>
+            <p>
+              We're doing our best to ensure US customers can get their sOSS
+              before Thanksgiving, but we unfortunately can't make any
+              guarantees.
+            </p>
+          </div>
+
+          <div class="faq">
+            <h3>
+              Where can I reach you?
+            </h3>
+            <p>
+              For questions about the sOSS, reach us at
+              <a href="https://bsky.app/profile/cranberrysoss.bsky.social"
+                >@cranberrysoss.bsky.social</a
+              >
+              or via email at
+              <a href="mailto:hello@cranberrysoss.com"
+                >hello@cranberrysoss.com</a
+              >.
+              For questions about shipping, payment and order fulfillment,
+              contact the Sentry Shop at
+              <a href="mailto:swag-support@sentry.io"
+                >swag-support@sentry.io</a
+              >.
+            </p>
+          </div>
+
+          <div class="faq">
+            <h3>
+              Who's responsible for this?
+            </h3>
+            <p>
+              Cranberry sOSS was conceived by Michael Selvidge and developed with
+              help from
+              <a href="https://vlad.website">Vlad-Stefan Harbuz</a>,
+              <a href="https://www.kumparak.com/">Greg Kumparak</a>
+              and
+              <a href="https://sentry.io">Sentry</a>'s
+              <a href="https://sentry.design/">Studio 404</a>.
+              Payment distribution is done by
+              <a href="https://thanks.dev">thanks.dev</a>.
+            </p>
+          </div>
+      </section>
+      <footer>
+        <div>
+          © 2025 Functional Software, Inc. dba Sentry
+        </div>
+
+        <div>
+          The product images on this page are 3D renders modelled after the
+          real product, which will look ever so slightly different.
+        </div>
+
+        <div>
+          <a href="https://checkout.sentry.shop/policies/refund-policy">Refund Policy</a>
+          &middot;
+          <a href="https://checkout.sentry.shop/policies/terms-of-service">Terms of Service</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
