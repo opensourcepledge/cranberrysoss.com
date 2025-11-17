@@ -573,6 +573,18 @@ section + section {
     }
   }
 }
+.burnout-minibanner--desktop {
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+.burnout-minibanner--mobile {
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
