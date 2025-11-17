@@ -542,6 +542,37 @@ section + section {
     }
   }
 }
+.bottom-cta {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: var(--color-red);
+  padding: 6px;
+  .bottom-cta__inner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    outline: 8px dotted var(--color-red);
+    outline-offset: -6px;
+    background: var(--color-burgundy);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    h2 {
+      margin: 0;
+      font-size: 1.3rem;
+      line-height: 1.4;
+      text-align: center;
+    }
+    p {
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
