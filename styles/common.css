@@ -117,6 +117,7 @@ SPDX-License-Identifier: Apache-2.0
 
 :root {
   --color-bg: #07011d;
+  --color-bg-trans: #07011daa;
   --color-red-pastel: #ae8182;
   --color-red-light: #e02f36;
   --color-red: #d01f26;
@@ -257,7 +258,11 @@ input, .button {
 }
 .narrow-container {
   max-width: 35rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 900px) {
+    max-width: none;
+  }
 }
 .flex {
   display: flex;
@@ -492,6 +497,40 @@ input, .button {
     }
   }
 }
+.section-group {
+  margin: 3rem 0;
+  & > h2 {
+    text-shadow: 0px 0px 15px var(--color-bg);
+  }
+  @media (max-width: 900px) {
+    margin: 0;
+    padding-top: 1rem;
+    background: var(--color-purple-dark);
+    & > h2 {
+      position: relative;
+      margin: 0;
+      margin-bottom: 0.5em;
+      padding-top: 6rem;
+      background: var(--color-purple-dark);
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2rem;
+        width: 6rem;
+        background: url(/images/asterism.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+    & > h2 + section {
+      padding-top: 0;
+    }
+  }
+}
 section {
   padding: 2rem;
   background: var(--color-purple-dark);
@@ -503,23 +542,6 @@ section {
     padding-right: 1rem;
   }
 }
-section + section {
-  position: relative;
-  padding-top: 6rem;
-  &:before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 2rem;
-    width: 6rem;
-    background: url(/images/asterism.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
 .td-logo {
   margin-top: 2rem;
 }
@@ -527,6 +549,9 @@ section + section {
   .faq {
     break-inside: avoid;
     margin-top: 1.5rem;
+    &:first-child {
+      margin-top: 0;
+    }
     h3 {
       margin: 0;
       margin-bottom: 0.3rem;
@@ -597,8 +622,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: center;
+  margin-top: 3rem;
   padding: 1rem;
+  text-align: center;
   background: var(--color-bg);
   font-size: 0.7rem;
   &, a {
